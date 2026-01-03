@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DU LỊCH VĨNH LONG</title>
+
+    <meta name="description" content="Khám phá du lịch Vĩnh Long – miền sông nước hữu tình">
+    <meta property="og:title" content="Du Lịch Vĩnh Long">
+    <meta property="og:description" content="Trải nghiệm miền Tây sông nước tại Vĩnh Long">
+    <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/5/59/Vinh_Long_river.jpg">
+    <meta property="og:type" content="website">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+
+.header {
+  height: 350px;
+  background-image: url("https://images.baoangiang.com.vn/image/fckeditor/upload/2020/20200801/images/vinh-long-15962555939612102813563-crop-1596255598478218607370.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+
+.header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 80, 120, 0.55);
+}
+
+
+.header-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  z-index: 1;
+}
+
+.header-text h1 {
+  font-size: 46px;
+  margin: 0;
+  letter-spacing: 2px;
+}
+
+.header-text p {
+  margin-top: 12px;
+  font-size: 20px;
+  font-style: italic;
+}
+        nav {
+            background: #2f8f83;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            flex-wrap: wrap;
+        }
+
+        nav ul li a {
+            display: block;
+            padding: 14px 20px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            background: #256f65;
+        }
+
+        section {
+            padding: 60px 15%;
+        }
+
+        h2 {
+            margin-bottom: 15px;
+        }
+
+        #trangchu {
+            background: #ffffff;
+            color: #333;
+        }
+
+        #trangchu h2 {
+            color: #2f8f83;
+        }
+
+        #diadiem {
+            background: #e6f4ef;
+            color: #2b4f4b;
+        }
+
+        #diadiem h2 {
+            color: #1f6b43;
+        }
+
+		#amthuc {
+    	background: #fff7e6;
+    	color: #5a3b00;
+		}
+
+		#amthuc h2 {
+    	color: #c27c0e;
+		}
+
+		.amthuc-card {
+    	background: #ffffff;
+    	border: 2px solid #ffe0a3;
+		}
+
+		.amthuc-card h3 {
+    	color: #a85f00;
+		}
+
+		.amthuc-card p {
+    	color: #5a3b00;
+		}
+
+        #lienhe {
+            background: #f7efe5;
+            color: #5b4636;
+        }
+
+        #lienhe h2 {
+            color: #8b5e3c;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 6px 12px rgba(0,0,0,0.08);
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-6px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .card div {
+            padding: 15px;
+        }
+
+        form input,
+        form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+        }
+
+        form button {
+            background: #2f8f83;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background: #256f65;
+        }
+
+        <style>
+		footer {
+    	background: #e6f4ef;
+    	color: #2f8f83;
+    	padding: 15px;
+    	text-align: left;  
+		}
+
+		footer p {
+    	font-size: 13px;    
+    	margin-left: 20px; 
+		}
+
+        @media (max-width: 768px) {
+            section {
+                padding: 30px 5%;
+            }
+
+            header h1 {
+                font-size: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+  <div class="header">
+   <div class="header-text">
+    <div>
+        <h1>DU LỊCH VĨNH LONG</h1>
+        <p>Một lần ghé Vĩnh Long, nhớ mãi miền sông nước và hương vị quê nhà</p>
+    </div>
+   </div>
+  </div>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#trangchu">Trang chủ</a></li>
+        <li><a href="#diadiem">Địa điểm</a></li>
+        <li><a href="#amthuc">Ẩm thực</a></li>
+        <li><a href="#lienhe">Liên hệ</a></li>
+    </ul>
+</nav>
+
+<section id="trangchu">
+    <h2>Giới thiệu Vĩnh Long</h2>
+     <div class="cards">
+        <div class="card">
+            <img src="https://images2.thanhnien.vn/528068263637045248/2025/4/25/f677865ab110034e5a01-1745550055063856208059.jpg">
+            <div>
+             <p>Nằm ở vị trí trung tâm giữa hai dòng sông lớn là sông Tiền và sông Hậu, Vĩnh Long sở hữu địa thế hình thoi độc đáo – nơi được ví như trái tim của vùng đồng bằng sông Cửu Long. Sau khi sắp xếp và tinh gọn địa giới hành chính với 8 đơn vị cấp huyện và 102 xã, phường, thị trấn, Vĩnh Long không chỉ là đầu mối giao thông quan trọng kết nối các tỉnh miền Tây mà còn mở rộng không gian phát triển du lịch sinh thái bền vững. Với lợi thế từ những cù lao xanh mướt, hệ thống sông ngòi chằng chịt và những thị tứ ven sông ngày càng khởi sắc sau sáp nhập, đây chính là điểm đến lý tưởng để du khách khám phá trọn vẹn nét đẹp văn hóa miệt vườn và nhịp sống sông nước đặc trưng của Nam Bộ
+             </p>
+            </div>
+         </div>
+     </div>
+            
+</section>
+
+<section id="diadiem">
+    <h2>Địa điểm du lịch nổi bật</h2>
+    <div class="cards">
+        <div class="card">
+        	 <a href="https://vinhlongtourist.vn/en/detailnews/?t=kham-pha-cu-lao-an-binh-diem-du-lich-song-nuoc-dam-chat-tay-nam-bo-tai-vinh-long&id=news_12094" style="text-decoration: none; color: inherit;">
+             
+            <img src="https://dulichviet.net.vn/wp-content/uploads/2020/03/cu-lao-an-binh.jpg">
+            <div>
+                <h3 style="color:  #2f8f83">Cù lao An Bình</h3>
+                <p>Cù lao An Bình là cù lao nằm giữa sông Tiền và sông Cổ Chiên, thuộc huyện Long Hồ, Vĩnh Long. Cù lao gồm 4 xã là An Bình, Bình Hòa Phước, Hòa Ninh và Đồng Phú. Với tổng diện tích hơn 60km2. Đây là một địa điểm du lịch sinh thái miền Tây nổi tiếng gần xa.</p>
+            </div>
+             </a>
+           
+        </div>
+
+        <div class="card">
+        	 <a href="https://vinhlongtourism.vn/cho-noi-tra-on-trai-nghiem-van-hoa-song-nuoc-dac-sac-khi-du-lich-vinh-long.html" style="text-decoration: none; color: inherit;">
+             
+            <img src="https://bazantravel.com/cdn/medias/uploads/82/82260-cho-noi-tra-on-vinh-long-700x461.jpg">
+            <div>
+                <h3 style="color:  #2f8f83">Chợ nổi Trà Ôn</h3>
+                <p>Chợ nổi Trà Ôn nằm ở huyện Trà Ôn, tỉnh Vĩnh Long, cách trung tâm thành phố Vĩnh Long khoảng 40 km. Chợ tọa lạc trên dòng sông Hậu, cách Vàm Trà Ôn khoảng 250m. Đây là một trong những chợ nổi lâu đời, đã tồn tại hơn một thế kỷ, và vẫn giữ được nhiều nét văn hóa giao thương đặc sắc của vùng Cửu Long..</p>
+            </div>
+             </a> 
+        </div>
+        <div class="card">
+        	<a href="https://vinhlongtourist.vn/en/detailnews/?t=khu-tuong-niem-thu-tuong-chinh-phu-vo-van-kiet-net-dep-van-hoa-cua-nguoi-dan-vung-liem&id=news_11161" style="text-decoration: none; color: inherit; display: block;">
+       		 
+            <img src="https://thanhnien.mediacdn.vn/Uploaded/dotuan/2022_11_19/vo-van-kiet-1363.jpg">
+            <div>
+                <h3 style="color:  #2f8f83">Khu tưởng niệm cố Thủ tướng Võ Văn Kiệt</h3>
+                <p>Khu tưởng niệm nằm tại ấp Phong Thới, thị trấn Vũng Liêm, tỉnh Vĩnh Long, với tổng diện tích khoảng 1,7 hecta. Đây là nơi gắn liền với quê hương của cố Thủ tướng Võ Văn Kiệt, người đã có nhiều đóng góp quan trọng cho sự nghiệp cách mạng và phát triển đất nước..</p>
+            </div>
+             </a>
+        </div>
+        <div class="card">
+        	 <a href="https://vietnamtourism.gov.vn/post/38054" style="text-decoration: none; color: inherit;">
+            <img src="https://media-cdn-v2.laodong.vn/Storage/NewsPortal/2022/10/17/1105831/Bien-Ba-Dong-Tra-Vin.jpg">
+            <div>
+                <h3 style="color:  #2f8f83">Biển Ba Động</h3>
+                <p>Biển Ba Động là khu du lịch biển tọa lạc trên địa bàn khóm Cồn Trứng, phường Trường Long Hòa, tỉnh Vĩnh Long, cách trung tâm phường Trà Vinh khoảng 55 km. Bãi biển Ba Động có chiều dài hơn 10 km, trãi dài từ Vàm Láng Nước đến Vàm Khâu Lầu với những đụn cát, hàng phi lao và bãi cát trãi dài. Ngoài ra, nơi đây còn có những điểm tham quan khác là hải đăng, các trại nuôi tôm và những cù lao.</p>
+            </div>
+             </a>
+        </div>
+        <div class="card">
+        	 <a href="https://vov.vn/van-hoa/di-san/ao-ba-om-vien-ngoc-xanh-giua-long-dat-khmer-noi-luu-dau-hon-thieng-van-hoa-nam-bo-post1205071.vov" style="text-decoration: none; color: inherit;">
+             
+            <img src="https://mia.vn/media/uploads/blog-du-lich/ao-ba-om-03-1699921853.jpg">
+             <div>
+ 				  <h3 style="color:  #2f8f83">Ao Bà Om</h3>
+                <p>Ao Bà Om (hay còn gọi là Ao Vuông) là một danh thắng nổi tiếng tọa lạc tại phường 8, thành phố Trà Vinh, nổi bật với mặt hồ tĩnh lặng trồng sen, súng và được bao quanh bởi rừng cây cổ thụ hàng trăm năm tuổi có bộ rễ hình thù kỳ lạ. Theo truyền thuyết, ao hình thành từ một cuộc thi đào hồ giữa hai nhóm nam và nữ người Khmer; nhờ sự mưu trí của bà Om, phái nữ đã giành chiến thắng trước phái nam, từ đó tên bà được đặt cho hồ nước này. Ngày nay, không chỉ là điểm vui chơi và chụp ảnh cưới lý tưởng, ao Bà Om còn là một cụm di tích văn hóa quan trọng khi nằm cạnh chùa Âng – ngôi chùa Khmer cổ nhất và có kiến trúc độc đáo bậc nhất tại địa phương..</p>
+             </div>
+             </a> 
+        </div>
+        <div class="card">
+        	 <a href="https://vi.wikipedia.org/wiki/L%C4%83ng_Nguy%E1%BB%85n_%C4%90%C3%ACnh_Chi%E1%BB%83u" style="text-decoration: none; color: inherit;">
+            <img src="https://dailytravelvietnam.com/vi/images/2016/02/den-tho-nha-tho-nguyen-dinh-chieu-2.jpg">
+            <div>
+                <h3 style="color:  #2f8f83">Lăng Nguyễn Đình Chiểu</h3>
+                <p>Di tích quốc gia đặc biệt Lăng mộ và Khu lưu niệm Nguyễn Đình Chiểu tọa lạc tại xã Ba Tri, tỉnh Vĩnh Long trên một khuôn viên rộng 5 ha. Đây là nơi yên nghỉ của nhà thơ yêu nước, người thầy giáo và thầy thuốc mẫu mực, cùng với các thành viên trong gia đình như nữ sĩ Sương Nguyệt Anh. Quần thể di tích gây ấn tượng bởi kiến trúc truyền thống hài hòa, gồm nhà bia, đền thờ mới quy mô và các bức phù điêu tái hiện tác phẩm Lục Vân Tiên kinh điển. Hàng năm vào ngày 1/7, nơi đây tổ chức lễ hội văn hóa lớn thu hút đông đảo du khách đến dâng hương và tưởng nhớ bậc danh nhân văn hóa thế giới..</p>
+            </div>
+             </a> 
+        </div>
+            <div class="card">
+        	 <a href="https://thamhiemmekong.com/thong-tin-du-lich-mien-tay/khu-di-tich-quoc-gia-dac-biet-dong-khoi-ben-tre.html" style="text-decoration: none; color: inherit;">
+            <img src="https://thamhiemmekong.com/wp-content/uploads/2020/06/khuditichdongkhoibentre.jpg">
+            <div>
+                <h3 style="color:  #2f8f83">Nhà truyền thống Đồng Khởi</h3>
+                <p>Khu di tích Đồng Khởi Bến Tre là một trong những địa điểm lịch sử quan trọng bậc nhất của miền Nam, gắn liền với phong trào cách mạng Đồng Khởi năm 1960. Nằm trên vùng đất xứ dừa trù phú, vốn nổi tiếng với những rặng dừa xanh, làng nghề truyền thống và ẩm thực dân dã, khu di tích không chỉ lưu giữ dấu ấn hào hùng của dân tộc mà còn trở thành điểm đến văn hóa – du lịch ý nghĩa.</p>
+        </div>
+             </a> 
+        </div>
+    </div>
+</section>
+
+<section id="amthuc">
+    <h2>Ẩm thực Vĩnh Long</h2>
+
+    <div class="cards amthuc-cards">
+        <div class="card amthuc-card">
+            <img src="https://www.yong.vn/Content/images/foods/banh-canh-ben-co-tra-vinh.jpg">
+            <div>
+                <h3>Bánh canh Bến Có</h3>
+                <p>Là một trong những đặc sản của Trà Vinh, bánh canh Bến Có mang hương vị thơm ngon và hấp dẫn hơn bao giờ hết. Tô bánh canh Bến Có có vẻ ngoài đơn giản, mộc mạc như chính người dân và văn hóa của vùng sông nước miệt vườn miền Tây. Tuy nhiên ẩn sau vẻ đơn giản ấy là một hương vị đặc trưng mà chỉ khi thưởng thức, bạn mới thực sự cảm nhận được. Sợi bánh mềm dai, màu trắng đục của bánh canh Bến Có không bị nở khi nấu trong nước dùng. Phần nước dùng được nấu từ xương hầm trong nhiều giờ để tạo ra hương vị ngọt tự nhiên, kết hợp với nguyên liệu tươi ngon và bí quyết nêm nếm riêng biệt, tạo nên một hương vị đặc trưng chỉ có ở bánh canh Bến Có.   
+                </p>
+            </div>
+        </div>
+
+        <div class="card amthuc-card">
+            <img src="https://th.bing.com/th/id/R.1af2b42693fed80a715fa5312991a088?rik=qivpa3tYI%2bkxvw&riu=http%3a%2f%2freviewvilla.vn%2fwp-content%2fuploads%2f2022%2f06%2fbanh-xeo-mien-tay-8.jpeg&ehk=mSMOtiqs8EYWby1jpc06%2fpZbijqnlu0Ag%2fzkFPxyjEw%3d&risl=&pid=ImgRaw&r=0">
+            <div>
+                <h3>Bánh xèo</h3>
+                <p>Khác với bánh xèo miền Trung, từ hình thức đến cách pha bột bánh xèo miền Tây đều có phần cầu kỳ hơn. Bí quyết làm bánh xèo miền Tây nằm ở vỏ bánh giòn rụm, béo ngậy từ nước cốt dừa.  Phần nhân đa dạng nào là tôm, thịt vịt, củ hủ dừa, giá đậu xanh,… Khi ăn cuốn cùng các loại rau rừng đủ vị chua chát, rồi chấm với nước mắm chua ngọt. Chỉ cần ăn một bánh cũng đủ no bụng, thoả cơn thèm.    
+                </p>
+            </div>
+        </div>
+
+        <div class="card amthuc-card">
+            <img src="https://mia.vn/media/uploads/blog-du-lich/bun-nuoc-leo-tra-vinh-1-1739012793.jpeg">
+            <div>
+                <h3>Bún nước lèo</h3>
+                <p>Bún nước lèo Trà Vinh là món ăn đặc sản mang đậm dấu ấn giao thoa văn hóa Kinh - Khmer - Hoa, nổi bật với hương vị thanh nhẹ nhưng đầy tinh tế. Linh hồn của món ăn nằm ở phần nước dùng được nấu từ mắm bò hóc đặc trưng, kết hợp với ngải bún để khử mùi và tạo hương thơm dịu nhẹ, cùng vị ngọt tự nhiên từ xương heo, tôm và cá lóc. Một tô bún đầy đủ thường có những miếng thịt cá lóc đồng trắng ngần, thịt heo quay da giòn rụm và đôi khi là cả chả giò chiên. Khi thưởng thức, người ăn kết hợp cùng các loại rau dân dã như bắp chuối, rau muống chẻ, hẹ và bông súng, tạo nên sự hòa quyện hoàn hảo giữa vị mặn, ngọt, thơm và giòn tan trong từng thìa nước dùng trong vắt.
+                 </p>
+            </div>
+        </div>
+        <div class="card amthuc-card">
+            <img src="https://dua.vn/wp-content/uploads/2023/10/Keo-dua-Ben-tre-sieu-ngon.jpg">
+            <div>
+                <h3>Kẹo dừa</h3>
+                <p> Kẹo dừa Bến Tre là món đặc sản trứ danh từ vùng đất Mỏ Cày, được kết hợp tinh tế giữa nước cốt dừa già béo ngậy, mạch nha nếp thơm và đường cát. Qua quá trình sên kỹ trên lửa, kẹo đạt độ dẻo mịn, ngọt thanh và tan chậm trong miệng với lớp bánh tráng mỏng đặc trưng. Không chỉ đa dạng về hương vị như sầu riêng, đậu phộng hay lá dứa, kẹo dừa còn là biểu tượng văn hóa và món quà quê đậm đà tình nghĩa của người dân xứ Dừa gửi đến thực khách phương xa.    
+                </p>
+            </div>
+        </div>
+        <div class="card amthuc-card">
+            <img src="https://duasapvicosap.com/uploads/1048/picture/2022/12/02/thie-t-ke-chu-a-co-te-n-3--1669953902.png">
+            <div>
+                <h3>Dừa sáp</h3>
+                <p>Dừa sáp là loại đặc sản quý hiếm và đắt đỏ nhất của vùng đất Cầu Kè (Trà Vinh), nổi bật với phần cơm dừa dày, mềm dẻo và đặc quánh như sáp thay vì chứa nước như dừa thường. Do quá trình biến đổi tự nhiên, nước dừa trong trái bị cô đặc lại tạo thành một lớp dịch trong suốt, béo ngậy và có hương thơm cực kỳ đặc trưng. Khi thưởng thức, người ta thường nạo cơm dừa trộn cùng sữa đặc, đậu phộng và đá bào để tạo nên món giải nhiệt cực kỳ hấp dẫn. Đây không chỉ là món ăn ngon mà còn là món quà sang trọng, độc đáo dành tặng bạn bè và người thân.
+                </p>
+            </div>
+        </div>
+        <div class="card amthuc-card">
+            <img src="https://media-cdn-v2.laodong.vn/Storage/NewsPortal/2023/3/20/1169851/Thanh-Tra-20.jpg">
+            <div>
+                <h3>Thanh trà</h3>
+                <p> Thanh trà là loại trái cây đặc sản nổi tiếng của vùng đất Bình Minh, Vĩnh Long với hình dáng nhỏ gọn, khi chín có màu vàng ươm và hương thơm quyến rũ. Loại quả này được chia làm hai giống chính: thanh trà chua thường dùng để nấu canh chua, kho cá và thanh trà ngọt thường dùng để ăn trực tiếp. Với vị chua ngọt thanh tao đặc trưng, thanh trà không chỉ là món quà vặt hấp dẫn mà còn được chế biến thành món nước giải nhiệt giải khát cực kỳ hiệu quả trong mùa hè.   
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="lienhe">
+    <h2>Liên hệ</h2>
+    <form>
+        <input type="text" placeholder="Họ và tên" required>
+        <input type="email" placeholder="Email" required>
+        <textarea rows="4" placeholder="Nội dung liên hệ"></textarea>
+        <button type="submit">Gửi</button>
+    </form>
+</section>
+
+<footer>
+	<footer style="font-size: 13px; text-align: left; line-height: 1.6; padding: 15px;">
+    <p>Lê Thị Kiều Duyên – Liên hệ: 0378 045 347</p>
+    <p>Gmail: lethikieuduyen10102008@gmail.com</p>
+    <p>Nguyễn Thị Huyền Trân – Liên hệ: 0706 582 220</p>
+    <p>Gmail: nguyenthihuyentran23112008@gmail.com</p>
+    <p>Trương Trần Thảo My – Liên hệ: 0792 272 507</p>
+    <p>Gmail: thaomy25072008@gmail.com</p>
+    <p>Nguyễn Ngọc Như Ý – Liên hệ: 0961 630 647</p>
+    <p>Gmail: ngocnhuyy030208@gmail.com</p>
+    
+</footer>
+</footer>
+
+</body>
+</html>
